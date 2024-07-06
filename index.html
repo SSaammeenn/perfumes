@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    
+        .hero-section {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4RTjjcnkqQx3VK0_22F4TusIuf-77alIPnA&s'); /* High-resolution background image URL */
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover {
+            transition: transform 0.3s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+        }
+        .card-hover img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .card-hover:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Hero Section -->
+    <section class="hero-section h-screen flex items-center justify-center text-white">
+        <div class="text-center bg-black bg-opacity-50 p-8 rounded-lg">
+            <h1 class="text-5xl font-bold mb-4 animate-bounce">Luxury Perfume</h1>
+            <p class="text-xl mb-6">Experience the essence of elegance</p>
+            <button class="bg-red-500 px-6 py-2 rounded-lg text-white hover:bg-blue-700">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-16 bg-red">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-12">Our Collection</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg transform card-hover">
+                    <img src="http://owperfumes.com/cdn/shop/files/image_aaf67ad7-f083-4e87-bfec-c423ba1dc573.webp?v=1706822013&width=2048" alt="Perfume" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Rose Essence</h3>
+                    <p class="text-gray-600 mb-4">A delicate blend of rose petals and essential oils.</p>
+                    <button class="bg-blue-500 px-4 py-2 rounded-lg text-white hover:bg-blue-700">Buy Now</button>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg transform card-hover">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtF_Qrt5doig08zNNsea6nqd_t7aK9kfi44C8R-maYeEW2bg1n0czVZuTCqc4XBFd_xH8&usqp=CAU" alt="Perfume" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Lavender Dream</h3>
+                    <p class="text-gray-600 mb-4">A calming scent of fresh lavender fields.</p>
+                    <button class="bg-blue-500 px-4 py-2 rounded-lg text-white hover:bg-blue-700">Buy Now</button>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg transform card-hover">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHgDjbqC2uXKEgtyQVA6roiBCNuoecnTgAqY5r9tz3uUsGVrpeSqvt_3n03AumxvVhTHY&usqp=CAU" alt="Perfume" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Citrus Burst</h3>
+                    <p class="text-gray-600 mb-4">A vibrant mix of citrus fruits and floral notes.</p>
+                    <button class="bg-blue-500 px-4 py-2 rounded-lg text-white hover:bg-blue-700">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-red-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-12">Get in Touch</h2>
+            <form class="max-w-xl mx-auto">
+                <div class="mb-4">
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Your Message" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 px-6 py-2 rounded-lg text-white hover:bg-blue-700">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-400 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <p>&copy; 2024 Luxury Perfume. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-blue-400 mx-2 hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-blue-400 mx-2 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-blue-400 mx-2 hover:text-blue-600"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card-hover');
+
+            cards.forEach(card => {
+                card.addEventListener('mouseover', () => {
+                    card.classList.add('animate__animated', 'animate__pulse');
+                });
+
+                card.addEventListener('mouseout', () => {
+                    card.classList.remove('animate__animated', 'animate__pulse');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
